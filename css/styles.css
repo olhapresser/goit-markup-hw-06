@@ -307,15 +307,16 @@ transition-duration: 250ms;
         background-color: var(--white-color);
     }
     
-    .modal .button-close{
-        background: url(../images/close.png) no-repeat;
+    .modal .icon-close{
+
         width: 30px;
         height: 30px;
         position: absolute;
         top: 8px;
         right: 8px;
-    
-        border: none;
+    padding: 6px;
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-radius: 50%;
     }
 
 
@@ -366,7 +367,7 @@ transition-duration: 250ms;
     }
 
 
-.form-field-input:focus, .footer-form-field-input:hover{
+.form-field-input:focus, .form-field-input:hover{
     border: var(--accent-color) solid 1px;
 
 }
