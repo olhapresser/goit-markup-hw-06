@@ -45,7 +45,67 @@
 </div>
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-  <button class="button" data-modal-close></button>
+  <button class="button button-close" data-modal-close></button>
+
+  <div class="modal-inner">
+
+    <h2 class="second-heading modal-second-heading">Залиште свої дані, ми вам передзвонимо</h2>
+  
+    <form class="form" name="main-form" novalidate autocomplete="on">
+  
+  <div class="form-field">
+    <label class="form-field-label" for="user-name">Ім'я</label>
+    <div class="input-icon">
+    <input class="form-field-input" type="text" name="user-name" id="user-name" required>
+    
+      <svg class="order-icon icon-name">
+        <use href="./images/icons-defs.svg#icon-persone"></use>
+      </svg>
+    </div>
+
+  </div>
+  
+  <div class="form-field">
+    <label class="form-field-label" for="user-tel">Телефон</label>
+    <div class="input-icon">
+    <input class="form-field-input" type="tel" name="user-tel" id="user-tel" required>
+      <svg class="order-icon icon-tel">
+        <use href="./images/icons-defs.svg#icon-phone"></use>
+      </svg>
+    </div>
+
+  </div>
+  
+  <div class="form-field">
+    <label class="form-field-label" for="user-email">Пошта</label>
+    
+    <div class="input-icon">
+    <input class="form-field-input" type="email" name="user-email" id="user-email" required>
+      <svg class="order-icon icon-mail">
+        <use href="./images/icons-defs.svg#icon-mail"></use>
+      </svg>
+    </div>
+  </div>
+  
+  <div class="form-field">
+    <label class="form-field-label" for="user-comment">Коментар</label>
+   <textarea class="form-field-input form-field-textarea" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+  </div>
+  
+  <div class="form-field form-field-checkbox ">
+    <input  type="checkbox" name="terms-conditions" id="terms-conditions">
+    <label  for="terms-conditions" class="label-checkbox">
+     <span class="modal-agree-text" > Погоджуюся з розсилкою та приймаю</span>
+      <a href="" class="modal-agree-link">Умови договору</a>
+    </label>
+  </div>
+  
+  <button class="button form-feild-button" type="submit">Відправити</button>
+  
+    </form>
+  
+  </div>
+
   </div>  
   </div>
 </section>
@@ -308,6 +368,32 @@
     
           </ul>
     </div>
+
+<form class="footer-form" name="footer-form" novalidate autocomplete="on">
+ 
+    <h2 class="second-heading">Підпишіться на розсилку</h2>
+    
+    <div class="footer-submit">
+    <div class="footer-form-field">
+      <label class="footer-form-field" for="fot-email"></label>
+      <input class="footer-form-field-input" type="email" name="fot-email" id="fot-email" placeholder="Email">
+    </div>
+    
+      <div class="footer-but">
+        <button class="button footer-button" type="submit">Підписатися</button>
+     
+      <svg class="footer-tg">
+          <use href="./images/icons-defs.svg#icon-tg"></use>
+        </svg>
+      </div>
+    
+    </div>
+    
+</form>
+
+
+</div>
+    
 </div>
 </footer>
 
