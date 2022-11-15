@@ -298,6 +298,8 @@ transition-duration: 250ms;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    padding: 40px;
     
         width: 528px;
         height: 581px;
@@ -310,38 +312,38 @@ transition-duration: 250ms;
 
 .modal .button-close{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 1);
+
+
     right: 8px;
     top: 8px;
-    border: none;
     background-color: transparent;
+    width: 30px;
+    height: 30px;
+
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ border-radius: 50%;
 }
 
 
     .modal .icon-close{
-
-        width: 30px;
-        height: 30px;
-        
-        top: 8px;
-        right: 8px;
-    padding: 6px;
-       border: 1px solid rgba(0, 0, 0, 0.1);
-       border-radius: 50%;
-
-       fill: rgba(0, 0, 0, 1);
-       ;
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
     }
 
-    .modal .icon-close:hover, .modal .icon-close:focus{
+   .button-close:hover ~ .icon-close, .button-close:focus ~ .icon-close{
+    fill:var(--accent-color);
 
-        fill: var(--accent-color);
+    
+    transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-
-
-    .modal-inner{
-        padding: 40px;
-    }
     
     .modal-second-heading{
         margin-bottom: 12px;
@@ -356,6 +358,10 @@ transition-duration: 250ms;
         position: relative;
         text-align: left;
         margin-bottom: 10px;
+    }
+
+    .last-form-field{
+        margin-bottom: 20px;
     }
     
     .form-field-label{
@@ -425,7 +431,7 @@ transition-duration: 250ms;
         display: block;
         width: 200px;
         padding: 10px 55px;
-        margin-bottom: 40px;
+        
         margin-left: auto;
         margin-right: auto;
 
