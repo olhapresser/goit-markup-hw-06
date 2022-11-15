@@ -307,17 +307,36 @@ transition-duration: 250ms;
         background-color: var(--white-color);
     }
     
+
+.modal .button-close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+
     .modal .icon-close{
 
         width: 30px;
         height: 30px;
-        position: absolute;
+        
         top: 8px;
         right: 8px;
     padding: 6px;
        border: 1px solid rgba(0, 0, 0, 0.1);
        border-radius: 50%;
+
+       fill: rgba(0, 0, 0, 1);
+       ;
     }
+
+    .modal .icon-close:hover, .modal .icon-close:focus{
+
+        fill: var(--accent-color);
+    }
+
 
 
     .modal-inner{
@@ -403,11 +422,13 @@ transition-duration: 250ms;
     
     
     .form-feild-button{
+        display: block;
         width: 200px;
         padding: 10px 55px;
         margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
 
-    
         font-weight: 700;
         font-size: 16px;
         line-height: calc(30/16);
@@ -866,13 +887,26 @@ color: var(--white-color);
     margin-right: 12px;
 
     width: 358px;
+    outline: transparent;
 
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: rgba(47, 48, 58, 1);
-;
+
+transition-property: border;
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.footer-form-field-input:focus{
+
+  
+
+    border: 1px solid var(--accent-color);
+}
+
 
 .footer-form-field-input::placeholder{
 
