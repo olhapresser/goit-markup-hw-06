@@ -335,7 +335,7 @@ transition-duration: 250ms;
     }
 
     .button-close:focus, .button-close:hower {
-        fill: var(--primary-accent-color);
+        fill: var(--accent-color);
       
 
     transition-property: color;
