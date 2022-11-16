@@ -332,14 +332,12 @@ transition-duration: 250ms;
     .modal .icon-close{
         width: 18px;
         height: 18px;
-        fill: currentColor;
     }
 
    .button-close:hover ~ .icon-close, .button-close:focus ~ .icon-close{
-    fill:var(--accent-color);
+    color:var(--accent-color);
 
-    
-    transition-property: fill;
+    transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
