@@ -334,8 +334,9 @@ transition-duration: 250ms;
         height: 18px;
     }
 
-   .button-close:hover ~ .icon-close, .button-close:focus ~ .icon-close{
-    color:var(--accent-color);
+    .button-close:focus, .button-close:hower {
+        fill: var(--primary-accent-color);
+      
 
     transition-property: color;
 transition-duration: 250ms;
