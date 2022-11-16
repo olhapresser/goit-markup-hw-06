@@ -336,8 +336,6 @@ transition-duration: 250ms;
 
     .button-close:focus, .button-close:hower {
         fill: var(--accent-color);
-      
-
     transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -474,7 +472,39 @@ fill: var(--form-icon-color);
     .modal-agree-link{
         color: var(--accent-color);
     }
+
+
+    .label-checkbox{
+        display: block;
+        padding-left: 22px;
+    }
+
+    .check-input{
+
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
     
+    }
+    
+.check-box{
+
+    
+margin-left: -22px;
+    position: absolute;
+    width: 16px;
+    height: 15px;
+   
+    background-image: url(../images/border.svg);
+}
+
+.check-input:checked + .check-box{
+    background-image: url(../images/icon-check.svg);
+}
+
+
     /*--------------------ADVANTAGES-----------------------*/
 .advantages-items{
     display: flex;
